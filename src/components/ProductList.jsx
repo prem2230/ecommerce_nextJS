@@ -14,7 +14,7 @@ const ProductList = () => {
                     <span className="font-semibold">$49</span>
                 </div>
                 <div className="text-sm text-gray-500">Description</div>
-                <button className="rounded-2xl ring-1 ring-offset-pink-600 text-pink-600 text-xs hover:bg-pink-500 hover:text-white px-4 py-2 cursor-pointer">Add to Cart</button>
+                <button className="rounded-2xl ring-1 ring-offset-pink-600 text-pink-600 text-xs hover:bg-pink-500 hover:text-white px-4 py-2 cursor-pointer w-max">Add to Cart</button>
             </Link>
             <Link href="/test" className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]">
                 <div className="relative w-full h-80">
@@ -26,7 +26,7 @@ const ProductList = () => {
                     <span className="font-semibold">$49</span>
                 </div>
                 <div className="text-sm text-gray-500">Description</div>
-                <button className="rounded-2xl ring-1 ring-offset-pink-600 text-pink-600 text-xs hover:bg-pink-500 hover:text-white px-4 py-2 cursor-pointer">Add to Cart</button>
+                <button className="rounded-2xl ring-1 ring-offset-pink-600 text-pink-600 text-xs hover:bg-pink-500 hover:text-white px-4 py-2 cursor-pointer w-max">Add to Cart</button>
             </Link>
             <Link href="/test" className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]">
                 <div className="relative w-full h-80">
@@ -38,7 +38,7 @@ const ProductList = () => {
                     <span className="font-semibold">$49</span>
                 </div>
                 <div className="text-sm text-gray-500">Description</div>
-                <button className="rounded-2xl ring-1 ring-offset-pink-600 text-pink-600 text-xs hover:bg-pink-500 hover:text-white px-4 py-2 cursor-pointer">Add to Cart</button>
+                <button className="rounded-2xl ring-1 ring-offset-pink-600 text-pink-600 text-xs hover:bg-pink-500 hover:text-white px-4 py-2 cursor-pointer w-max ">Add to Cart</button>
             </Link>
             <Link href="/test" className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]">
                 <div className="relative w-full h-80">
@@ -50,7 +50,7 @@ const ProductList = () => {
                     <span className="font-semibold">$49</span>
                 </div>
                 <div className="text-sm text-gray-500">Description</div>
-                <button className="rounded-2xl ring-1 ring-offset-pink-600 text-pink-600 text-xs hover:bg-pink-500 hover:text-white px-4 py-2 cursor-pointer">Add to Cart</button>
+                <button className="rounded-2xl ring-1 ring-offset-pink-600 text-pink-600 text-xs hover:bg-pink-500 hover:text-white px-4 py-2 cursor-pointer w-max">Add to Cart</button>
             </Link>
         </div>
     )
