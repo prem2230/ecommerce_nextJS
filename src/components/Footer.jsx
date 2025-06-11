@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <div className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 bg-gray-100 text-sm mt-24">
+        <div className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 bg-gray-100 text-sm mt-24 py-24">
             <div className="flex flex-col md:flex-row justify-content gap-24">
                 <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col gap-8">
                     <Link href="/">
@@ -70,7 +70,19 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div></div>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8 mt-16">
+                <div>© 2025 aKart </div>
+                <div className="flex flex-col md:flex-row gap-8">
+                    <div>
+                        <span className="text-gray-500 mr-4">Language</span>
+                        <span className="font-medium">Chennai | English</span>
+                    </div>
+                    <div>
+                        <span className="text-gray-500 mr-4">Currency</span>
+                        <span className="font-medium"> ₹ INR </span>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
