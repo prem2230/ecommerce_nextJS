@@ -29,8 +29,8 @@ const NavIcons = () => {
                 </div>
             </div>}
             <Image src="/bell.svg" alt="notification" width={24} height={24} className="cursor-pointer" />
-            <div className='relative cursor-pointer'>
-                <Image src="cart.svg" alt="cart" width={24} height={24} className="cursor-pointer" onClick={() => setIsCartOpen(!isCartOpen)} />
+            <div className='relative cursor-pointer' onClick={() => setIsCartOpen(!isCartOpen)}>
+                <Image src="cart.svg" alt="cart" width={24} height={24} className="cursor-pointer" />
                 <div className="absolute rounded-full text-sm flex items-center justify-center text-white -top-4 -right-4 w-6 h-6 bg-[#F35C7A]">
                     2
                 </div>
