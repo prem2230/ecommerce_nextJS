@@ -5,7 +5,7 @@ const Add = () => {
     const [quantity, setQuantity] = useState(1);
     const stock = 6;
 
-    const handleQuantity = (action: "inc" | "dec") => {
+    const handleQuantity = (action) => {
         if (action === 'inc' && quantity < stock) {
             setQuantity((prev) => prev + 1);
         } else if (action === 'dec' && quantity > 1) {

@@ -1,7 +1,14 @@
+import { wixClientServer } from "@/lib/wixClientServer"
 import Image from "next/image"
 import Link from "next/link"
 
-const ProductList = () => {
+const PRODUCTS_PER_PAGE = 20;
+
+const ProductList = async ({ categoryId, limit }) => {
+    const wixClient = await wixClientServer();
+
+    const res = await wixClient.products.queryProducts().limit(limit || PRODUCTS_PER_PAGE).find();
+
     return (
         <div className="mt-12 flex gap-x-8 gap-y-16 justify-between flex-wrap">
             <Link href="/test" className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]">
