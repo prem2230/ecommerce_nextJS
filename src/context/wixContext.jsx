@@ -17,7 +17,7 @@ const wixClient = createClient({
     }),
 });
 
-export const WixContext = createContext < WixClient > (wixClient);
+export const WixContext = createContext(wixClient);
 
 export const WixContextProvider = ({ children }) => {
     return (

@@ -1,29 +1,11 @@
 import Slider from "../components/Slider";
 import ProductList from "../components/ProductList";
-import CategoryList from "../components/CategoryList.tsx";
 import Image from "next/image";
-// import { useContext, useEffect } from "react";
-// import { WixContext } from "../context/wixContext";
-// import { useWixClient } from "../hooks/useWixClient";
 import { wixClientServer } from "../lib/wixClientServer";
 import { Suspense } from "react";
+import CategoryList from "@/components/CategoryList";
 
 export default async function Home() {
-
-  // const wixClient = useWixClient()
- 
-  // useEffect(()=>{
-  //   const getProducts =async() =>{
-  //     try {
-  //       const res = await wixClient.products.queryProducts().find();
-  //       console.log("response", res);
-  //     } catch (error) {
-  //       console.error("Error fetching products:", error);
-  //       // Handle the error appropriately
-  //     }
-  //   }
-  //   getProducts();
-  // },[wixClient])
 
   const wixClient = await wixClientServer();
   const res = await wixClient.products.queryProducts().find();
@@ -44,7 +26,7 @@ export default async function Home() {
      </div>
       <div className=" mt-24 px-4 md:px-8 lg:px-8 xl:px-16 2xl:px-32">
       <h1 className="text-2xl">New Products</h1>
-      <ProductList />
+      <ProductList categoryId={process.env.NEW_PRODUCTS_CATEGORY_ID}/>
      </div>
     </div>
   );

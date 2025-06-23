@@ -1,6 +1,6 @@
+
 import { createClient, OAuthStrategy } from "@wix/sdk";
 import { cookies } from "next/headers";
-import { createContext, ReactNode } from 'react';
 import { products, collections } from '@wix/stores';
 
 export const wixClientServer = async () => {
