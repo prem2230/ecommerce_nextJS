@@ -7,9 +7,13 @@ import CategoryList from "@/components/CategoryList";
 
 export default async function Home() {
 
-  const wixClient = await wixClientServer();
-  const res = await wixClient.products.queryProducts().find();
-  console.log("response",res)
+  try {
+    const wixClient = await wixClientServer();
+    const res = await wixClient.products.queryProducts().find();
+    console.log("response", res);
+  } catch (error) {
+    console.error("Wix API error:", error);
+  }
   
   return (
     <div className="">
