@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const CustomizeProducts = ({ options }) => {
     const [selectedOptions, setSelectedOptions] = useState({});
@@ -11,6 +11,18 @@ const CustomizeProducts = ({ options }) => {
             [optionName]: choice
         }));
     };
+
+    useEffect(() => {
+        if (options && options.length > 0) {
+            const initialSelections = {};
+            options.forEach(option => {
+                if (option.choices && option.choices.length > 0) {
+                    initialSelections[option.name] = option.choices[0];
+                }
+            })
+            setSelectedOptions(initialSelections)
+        }
+    }, [])
     return (
         <div className="flex flex-col gap-6">
             {options?.map((option, index) => (
