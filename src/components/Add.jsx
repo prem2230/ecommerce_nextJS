@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-const Add = () => {
+const Add = ({ stocks }) => {
     const [quantity, setQuantity] = useState(1);
     const stock = 6;
 
