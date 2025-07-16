@@ -10,8 +10,6 @@ const SinglePage = async ({ params }) => {
 
   const res = await wixClient.products.getProduct(id);
 
-  console.log('first', res)
-
   return (
     <div className="px-4 md:px-8 lg:px-8 xl:px-16 2xl:px-32 relative flex flex-col lg:flex-row gap-16">
       <div className="w-full lg:w-1/2 lg:sticky top-20 h-max">
